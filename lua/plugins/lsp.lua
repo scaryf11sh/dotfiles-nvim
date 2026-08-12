@@ -7,7 +7,12 @@ return {
         clangd = {},
 
         -- Assembly (x86 NASM, etc.)
-        asm_lsp = {},
+        asm_lsp = {
+          settings = {
+            assembler = "NASM",
+            instruction_set = "x86",
+          },
+        },
 
         -- Arduino
         arduino_language_server = {},
@@ -23,6 +28,26 @@ return {
 
         -- CMake
         cmake = {},
+
+        html = {
+          settings = {
+            html = {
+              format = { enable = false },
+            },
+          },
+        },
+
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                typeCheckingMode = "basic",
+                autoSearchPath = true,
+                useLibraryCodeForTypes = true,
+              },
+            },
+          },
+        },
       },
     },
   },

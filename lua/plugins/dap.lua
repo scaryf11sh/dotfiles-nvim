@@ -24,7 +24,7 @@ return {
         "jay-babu/mason-nvim-dap.nvim",
         dependencies = "mason-org/mason.nvim",
         opts = {
-          ensure_installed = { "codelldb" },
+          ensure_installed = { "codelldb", "python" },
           handlers = {}, -- codelldb se autoconfigura
         },
       },

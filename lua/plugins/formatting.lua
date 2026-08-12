@@ -12,6 +12,8 @@ return {
         sh = { "shfmt" },
         bash = { "shfmt" },
         zsh = { "shfmt" },
+        html = { "prettier" },
+        css = { "prettier" },
       },
       format_on_save = {
         timeout_ms = 500,
